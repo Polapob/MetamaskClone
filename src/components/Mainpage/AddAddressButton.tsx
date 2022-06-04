@@ -2,11 +2,8 @@ import { useState,memo } from "react";
 import CoinInterface from "../../interface/CoinInterface";
 import AddAddressModal from "../AddAddressModal";
 
-interface Props {
-  addSelectCoins: (addedCoin: CoinInterface) => void;
-}
 
-const AddAddressButton = ({ addSelectCoins }: Props) => {
+const AddAddressButton = () => {
   const [openModal, setOpenModal] = useState<boolean>(false);
   const handleOpenModal = () => {
     setOpenModal(true);
@@ -25,7 +22,6 @@ const AddAddressButton = ({ addSelectCoins }: Props) => {
       <AddAddressModal
         isOpen={openModal}
         handleOnClose={handleCloseModal}
-        addSelectCoins={addSelectCoins}
       />
     </>
   );

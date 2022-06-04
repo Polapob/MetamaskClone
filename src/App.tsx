@@ -1,15 +1,16 @@
-import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import { MetaMaskProvider } from "./context/MetamaskContext";
 import Mainpage from "./page/Mainpage";
-
-function App() {
+import { selectedCoins } from "./state/SelectedCoins";
+import { observer } from "mobx-react";
+import { toJS } from "mobx";
+//import {useObserver} from
+const App = observer(() => {
   return (
     <MetaMaskProvider>
-      <Mainpage />
+      <Mainpage selectedCoins={toJS(selectedCoins.getCoins())} />
     </MetaMaskProvider>
   );
-}
+});
 
 export default App;

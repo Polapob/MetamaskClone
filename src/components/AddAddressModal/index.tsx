@@ -19,12 +19,11 @@ import useCreateAddressModal from "../../hooks/AddAddressModal/useCreateAddressM
 interface Props {
   isOpen: boolean;
   handleOnClose: MouseEventHandler;
-  addSelectCoins: (addedCoin: CoinInterface) => void;
 }
 
-const AddAddressModal = ({ isOpen, handleOnClose, addSelectCoins }: Props) => {
+const AddAddressModal = ({ isOpen, handleOnClose }: Props) => {
   const [handleDataChange, closeModal, handleOnSave, isPress, data] =
-    useCreateAddressModal(handleOnClose, addSelectCoins);
+    useCreateAddressModal(handleOnClose);
   return (
     <div
       className={`fixed ${
