@@ -1,5 +1,4 @@
 import { useState,memo } from "react";
-import CoinInterface from "../../interface/CoinInterface";
 import AddAddressModal from "../AddAddressModal";
 
 

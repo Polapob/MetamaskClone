@@ -18,7 +18,6 @@ const TransferModal = ({
 }: Props) => {
   const [handleDataChange, handleOnSave, closeModal, data, isPress] =
     useCreateTransferModal(handleOnClose, tokenAddress, decimal);
-
   return (
     <div
       className={`fixed ${

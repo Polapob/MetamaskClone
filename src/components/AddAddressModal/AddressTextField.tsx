@@ -1,6 +1,3 @@
-import { ethers } from "ethers";
-import { ChangeEvent, ChangeEventHandler, useEffect, useState } from "react";
-import Abi from "../../abi";
 import useCreateAddressTextField from "../../hooks/AddAddressModal/useCreateAddressTextField";
 import ModalDataInterface from "../../interface/ModalDataInterface";
 

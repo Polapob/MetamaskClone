@@ -1,4 +1,3 @@
-import { ethers } from "ethers";
 import {
   useState,
   useContext,
@@ -41,7 +40,6 @@ const useCreateAddressModal = (
     handleOnClose(event);
     await selectedCoins.addCoin(walletState.address, data);
     toggleButtonPress();
-    console.log(selectedCoins.getCoins());
   };
   return [
     handleDataChange,

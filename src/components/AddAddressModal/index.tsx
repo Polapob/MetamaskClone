@@ -1,18 +1,9 @@
 import {
   MouseEventHandler,
-  useCallback,
-  useState,
-  MouseEvent,
-  useContext,
   memo,
 } from "react";
-import { ethers } from "ethers";
-import CoinInterface from "../../interface/CoinInterface";
-import ModalDataInterface from "../../interface/ModalDataInterface";
 import AddressTextField from "./AddressTextField";
 import DisabledTextField from "./DisabledTextField";
-import Abi from "../../abi";
-import { MetaMaskContext } from "../../context/MetamaskContext";
 import CloseIcon from "../Mainpage/CloseIcon";
 import useCreateAddressModal from "../../hooks/AddAddressModal/useCreateAddressModal";
 

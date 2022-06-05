@@ -12,8 +12,10 @@ const CryptoRow = ({ eachCoin }: Props) => {
     10 ** (10-eachCoin.decimal)
   ).toString();
 
+  console.log(openModal);
+
   return (
-    <div className="grid grid-cols-4 justify-center w-full items-center">
+    <div className={`grid grid-cols-4 justify-center w-full items-center`}>
       <div className="font-bold font-xl">{eachCoin.name}</div>
       <div className="font-bold font-xl">{eachCoin.symbol}</div>
       <div className="font-bold font-xl">{`${

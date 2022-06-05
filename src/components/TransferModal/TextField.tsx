@@ -1,8 +1,4 @@
 import {
-  ChangeEvent,
-  ChangeEventHandler,
-  useEffect,
-  useState,
   memo,
 } from "react";
 import useCreateTextField from "../../hooks/TransferModal/useCreateTextField";
